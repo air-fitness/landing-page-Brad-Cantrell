@@ -1,2 +1,2 @@
-# landing-pages
-Nifty Markets Landing Page
+# landing-page
+Landing Page for AirFitness
