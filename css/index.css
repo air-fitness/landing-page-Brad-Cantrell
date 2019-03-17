@@ -1,0 +1,27 @@
+.container {
+  font-family: 'playfair display';
+  width: 90%;
+  margin: 0 auto;
+}
+.intro {
+  background: url(img/intro-bg.jpg) no-repeat center center fixed;
+}
+.intro nav {
+  display: flex;
+  justify-content: space-between;
+}
+.intro nav .logo {
+  display: flex;
+}
+.intro nav .logo h1 {
+  font-size: 60px;
+}
+.intro nav button {
+  border-radius: 15px;
+  background: green;
+  color: white;
+  height: 60px;
+  width: 400px;
+  font-size: 30px;
+  margin-top: 30px;
+}
