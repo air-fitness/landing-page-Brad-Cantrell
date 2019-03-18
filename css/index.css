@@ -1,22 +1,26 @@
-.container {
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/intro-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 1000px;
+}
+header .container {
   font-family: 'playfair display';
   width: 90%;
   margin: 0 auto;
 }
-.intro {
-  background: url(img/intro-bg.jpg) no-repeat center center fixed;
-}
-.intro nav {
+header .container .nav-area {
   display: flex;
   justify-content: space-between;
 }
-.intro nav .logo {
+header .container .nav-area .logo {
   display: flex;
 }
-.intro nav .logo h1 {
+header .container .nav-area .logo h1 {
   font-size: 60px;
+  color: white;
 }
-.intro nav button {
+header .container .nav-area button {
   border-radius: 15px;
   background: green;
   color: white;

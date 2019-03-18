@@ -1,32 +1,38 @@
-.container {
-    font-family: 'playfair display';
-    width: 90%;
-    margin: 0 auto;
-}
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('../img/intro-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    // background-color: #ccc;
+    height: 1000px;
 
-.intro {
-    background: url(img/intro-bg.jpg) no-repeat center center fixed;
+    .container {
+        font-family: 'playfair display';
+        width: 90%;
+        margin: 0 auto;
 
-    nav {
-        display: flex;
-        justify-content: space-between;
 
-        .logo {
+        .nav-area {
             display: flex;
+            justify-content: space-between;
 
-            h1 {
-                font-size: 60px;
+            .logo {
+                display: flex;
+
+                h1 {
+                    font-size: 60px;
+                    color: white;
+                }
             }
-        }
 
-        button {
-            border-radius: 15px;
-            background: green;
-            color: white;
-            height: 60px;
-            width: 400px;
-            font-size: 30px;
-            margin-top: 30px;
+            button {
+                border-radius: 15px;
+                background: green;
+                color: white;
+                height: 60px;
+                width: 400px;
+                font-size: 30px;
+                margin-top: 30px;
+            }
         }
     }
 }
