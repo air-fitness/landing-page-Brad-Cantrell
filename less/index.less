@@ -1,3 +1,6 @@
+@mobile: ~"(max-width: 500px)";
+
+
 header {
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../img/intro-bg.jpg');
     background-size: cover;
@@ -14,6 +17,11 @@ header {
         .nav-area {
             display: flex;
             justify-content: space-between;
+
+            @media @mobile{
+                display: block;
+            }
+
 
             .logo {
                 display: flex;

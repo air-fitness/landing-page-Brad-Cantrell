@@ -13,6 +13,11 @@ header .container .nav-area {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  header .container .nav-area {
+    display: block;
+  }
+}
 header .container .nav-area .logo {
   display: flex;
 }
