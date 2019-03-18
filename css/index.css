@@ -34,3 +34,11 @@ header .container .nav-area button {
   font-size: 30px;
   margin-top: 30px;
 }
+header .container .description-header {
+  color: #8fbdda;
+  font-family: "Work Sans";
+  font-weight: 300;
+}
+header .container .description-header h2 {
+  text-align: center;
+}
