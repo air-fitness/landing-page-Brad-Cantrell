@@ -1,15 +1,18 @@
+@import 'team.less';
+
 @mobile: ~"(max-width: 500px)";
+@desktop: ~"(max-width: 1000px)";
 
 
 header {
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../img/intro-bg.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/intro-bg.jpg');
     background-size: cover;
     background-position: center;
-    // background-color: #ccc;
     height: 1000px;
+    background-attachment: fixed;
 
     .container {
-        font-family: 'playfair display';
+        font-family: 'Lato', 'Arial', sans-serif;
         width: 90%;
         margin: 0 auto;
 
@@ -18,10 +21,9 @@ header {
             display: flex;
             justify-content: space-between;
 
-            @media @mobile{
-                display: block;
+            h1 {
+                font-family: 'playfair display';
             }
-
 
             .logo {
                 display: flex;
@@ -32,7 +34,7 @@ header {
                 }
             }
 
-            button {
+            .app-link-button {
                 border-radius: 15px;
                 background: green;
                 color: white;
@@ -41,16 +43,75 @@ header {
                 font-size: 30px;
                 margin-top: 30px;
             }
+
+            @media @desktop {
+                display: block;
+
+                h1 {
+                    margin: 0 auto;
+                }
+
+                .app-link-button {
+                    text-align: center;
+                }
+            }
         }
 
-        .description-header{
-            color: rgb(143, 189, 218);
-            font-family: "Work Sans";
-            font-weight: 300;
-
-            h2{
-                text-align: center;
-            }
+        .banner {
+            margin: 100px;
+            color: white;
+            font-size: 180%;
+            word-spacing: 4px;
+            letter-spacing: 1px;
         }
     }
 }
+
+.description-area {
+    display: flex;
+
+    .photobox {
+        max-width: 600px;
+    }
+
+    .description-text {
+        max-width: 50%;
+        margin: 100px;
+
+        color: black;
+        text-align: center;
+        font-family: 'Lato';
+        font-weight: 300;
+    }
+
+    @media @desktop {
+        display: block;
+
+        .photobox{
+            margin: 0 auto;
+        }
+        .description-text{
+            margin: 0 auto;
+        }
+    }
+
+}
+
+.lower-section {
+    background: #f4f4f4;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+
+    .meet-team-button{
+        color: black;
+        background: skyblue;
+        margin: 20px auto;
+        height: 40px;
+        width: 300px;
+        font-size: 20px;
+        border-radius: 10px;
+
+    }
+}
+
