@@ -1,17 +1,38 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Lato', 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  background: green;
+  margin: 40px auto;
+}
+.container img {
+  width: 100px;
+}
+.container .pic-box {
+  width: 200px;
+  height: 400px;
+  background: white;
+  text-align: center;
+}
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/intro-bg.jpg');
   background-size: cover;
   background-position: center;
   height: 1000px;
+  background-attachment: fixed;
 }
 header .container {
-  font-family: 'playfair display';
+  font-family: 'Lato', 'Arial', sans-serif;
   width: 90%;
   margin: 0 auto;
 }
 header .container .nav-area {
   display: flex;
   justify-content: space-between;
+}
+header .container .nav-area h1 {
+  font-family: 'playfair display';
 }
 header .container .nav-area .logo {
   display: flex;
@@ -20,7 +41,7 @@ header .container .nav-area .logo h1 {
   font-size: 60px;
   color: white;
 }
-header .container .nav-area button {
+header .container .nav-area .app-link-button {
   border-radius: 15px;
   background: green;
   color: white;
@@ -28,4 +49,62 @@ header .container .nav-area button {
   width: 400px;
   font-size: 30px;
   margin-top: 30px;
+}
+@media (max-width: 1000px) {
+  header .container .nav-area {
+    display: block;
+  }
+  header .container .nav-area h1 {
+    margin: 0 auto;
+  }
+  header .container .nav-area .app-link-button {
+    text-align: center;
+  }
+}
+header .container .banner {
+  margin: 100px;
+  color: white;
+  font-size: 180%;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+}
+.description-area {
+  display: flex;
+}
+.description-area .photobox {
+  max-width: 600px;
+}
+.description-area .description-text {
+  max-width: 50%;
+  margin: 100px;
+  color: black;
+  text-align: center;
+  font-family: 'Lato';
+  font-weight: 300;
+}
+@media (max-width: 1000px) {
+  .description-area {
+    display: block;
+  }
+  .description-area .photobox {
+    margin: 0 auto;
+  }
+  .description-area .description-text {
+    margin: 0 auto;
+  }
+}
+.lower-section {
+  background: #f4f4f4;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+}
+.lower-section .meet-team-button {
+  color: black;
+  background: skyblue;
+  margin: 20px auto;
+  height: 40px;
+  width: 300px;
+  font-size: 20px;
+  border-radius: 10px;
 }
