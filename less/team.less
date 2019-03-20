@@ -1,19 +1,54 @@
-.container{
-    display: flex;
-    justify-content: space-between;
-    font-family: 'Lato', 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    background: green;
-    margin: 40px auto;
+body {
 
-    img{
-        width: 100px;
+    font-family: 'Lato', 'Arial', sans-serif;
+
+    nav {
+        height: 74px;
+        background: #35424a;
+
+        h1{
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        // a{
+        //     text-decoration: none;
+        //     h2 {
+        //         color: white;
+        //         padding: 20px;
+        //     }
+        // }
+        .team-back-button {
+            border-radius: 5px;
+            background: skyblue;
+            color: black;
+            height: 50px;
+            width: 100;
+            font-size: 20px;
+            margin: 10px;
+        }
     }
 
-    .pic-box{
-        width: 200px;
-        height: 400px;
-        background: white;
-        text-align: center;
+    .container-team {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        margin: 0 auto;
+        background-color: #f4f4f4;
+
+        img {
+            width: 100px;
+            margin-top: 20px;
+        }
+
+        .pic-box {
+            width: 200px;
+            height: 300px;
+            background: white;
+            text-align: center;
+            margin: 50px 0;
+        }
     }
 }

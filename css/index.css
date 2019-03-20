@@ -1,19 +1,41 @@
-.container {
-  display: flex;
-  justify-content: space-between;
+body {
   font-family: 'Lato', 'Arial', sans-serif;
+}
+body nav {
+  height: 74px;
+  background: #35424a;
+}
+body nav h1 {
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+body nav .team-back-button {
+  border-radius: 5px;
+  background: skyblue;
+  color: black;
+  height: 50px;
+  width: 100;
+  font-size: 20px;
+  margin: 10px;
+}
+body .container-team {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
   background-color: #f4f4f4;
-  background: green;
-  margin: 40px auto;
 }
-.container img {
+body .container-team img {
   width: 100px;
+  margin-top: 20px;
 }
-.container .pic-box {
+body .container-team .pic-box {
   width: 200px;
-  height: 400px;
+  height: 300px;
   background: white;
   text-align: center;
+  margin: 50px 0;
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/intro-bg.jpg');
@@ -57,8 +79,20 @@ header .container .nav-area .app-link-button {
   header .container .nav-area h1 {
     margin: 0 auto;
   }
-  header .container .nav-area .app-link-button {
+  header .container .nav-area .app-link-form {
     text-align: center;
+  }
+  header .container .nav-area .move-up-pic {
+    order: 1;
+  }
+}
+@media (max-width: 500px) {
+  header .container .nav-area .app-link-button {
+    width: 300px;
+    height: 100px;
+  }
+  header .container .nav-area .banner h1 {
+    font-size: 100px;
   }
 }
 header .container .banner {
@@ -68,11 +102,21 @@ header .container .banner {
   word-spacing: 4px;
   letter-spacing: 1px;
 }
+@media (max-width: 500px) {
+  header .container .banner {
+    font-size: 140%;
+  }
+}
 .description-area {
   display: flex;
 }
-.description-area .photobox {
+.description-area .photobox img {
   max-width: 600px;
+}
+@media (max-width: 500px) {
+  .description-area .photobox img {
+    max-width: 100%;
+  }
 }
 .description-area .description-text {
   max-width: 50%;
@@ -84,7 +128,8 @@ header .container .banner {
 }
 @media (max-width: 1000px) {
   .description-area {
-    display: block;
+    flex-direction: column;
+    align-items: center;
   }
   .description-area .photobox {
     margin: 0 auto;
@@ -92,9 +137,12 @@ header .container .banner {
   .description-area .description-text {
     margin: 0 auto;
   }
+  .description-area .move-up-pic {
+    order: -1;
+  }
 }
 .lower-section {
-  background: #f4f4f4;
+  background: #35424a;
   height: 75px;
   display: flex;
   justify-content: center;
