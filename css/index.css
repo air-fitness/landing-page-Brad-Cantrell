@@ -113,6 +113,11 @@ header .container .banner {
 .description-area .photobox img {
   max-width: 600px;
 }
+@media (max-width: 500px) {
+  .description-area .photobox img {
+    max-width: 100%;
+  }
+}
 .description-area .description-text {
   max-width: 50%;
   margin: 100px;

@@ -94,7 +94,12 @@ header {
     .photobox{
         img{
             max-width: 600px;
+
+            @media @mobile{
+                max-width: 100%;
+            }
         }
+        
     }
 
     .description-text {
@@ -121,6 +126,7 @@ header {
         .move-up-pic{
             order: -1;
         }
+        
     }
 
 }
