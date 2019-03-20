@@ -21,14 +21,14 @@ body nav .team-back-button {
 }
 body .container-team {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   margin: 0 auto;
   background-color: #f4f4f4;
 }
 body .container-team img {
   width: 100px;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 body .container-team .pic-box {
   width: 200px;
