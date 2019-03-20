@@ -21,7 +21,7 @@ body nav .team-back-button {
 }
 body .container-team {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   margin: 0 auto;
   background-color: #f4f4f4;
