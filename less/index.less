@@ -70,8 +70,12 @@ header {
 .description-area {
     display: flex;
 
-    .photobox {
+    .photobox{
         max-width: 600px;
+
+        img{
+            max-width: 600px;
+        }
     }
 
     .description-text {
@@ -97,8 +101,38 @@ header {
 
 }
 
+// .description-area-2 {
+//     display: flex;
+
+//     .photobox img{
+//         max-width: 600px;
+//     }
+
+//     .description-text {
+//         max-width: 50%;
+//         margin: 100px;
+
+//         color: black;
+//         text-align: center;
+//         font-family: 'Lato';
+//         font-weight: 300;
+//     }
+
+//     @media @desktop {
+//         display: block;
+
+//         .photobox{
+//             margin: 0 auto;
+//         }
+//         .description-text{
+//             margin: 0 auto;
+//         }
+//     }
+
+// }
+
 .lower-section {
-    background: #f4f4f4;
+    background: #35424a;
     height: 75px;
     display: flex;
     justify-content: center;
