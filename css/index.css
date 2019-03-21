@@ -68,9 +68,9 @@ header .container .nav-area .app-link-button {
   background: green;
   color: white;
   height: 60px;
-  width: 400px;
+  width: 250px;
   font-size: 30px;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 @media (max-width: 1000px) {
   header .container .nav-area {
