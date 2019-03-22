@@ -32,10 +32,22 @@ body .container-team img {
 }
 body .container-team .pic-box {
   width: 200px;
-  height: 300px;
+  height: 350px;
   background: white;
   text-align: center;
   margin: 50px 0;
+}
+body .container-team .viewButton {
+  width: 70px;
+  height: 25px;
+  background: #9c9b9b;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.bio {
+  background: red;
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/intro-bg.jpg');
@@ -71,6 +83,7 @@ header .container .nav-area .app-link-button {
   width: 250px;
   font-size: 30px;
   margin-top: 50px;
+  cursor: pointer;
 }
 @media (max-width: 1000px) {
   header .container .nav-area {
@@ -155,4 +168,5 @@ header .container .banner {
   width: 300px;
   font-size: 20px;
   border-radius: 10px;
+  cursor: pointer;
 }
