@@ -10,7 +10,8 @@ class TeamPanel {
     }
 
     viewBio() {
-        this.viewButton.style.background= "red";
+        // this.viewButton.style.background= "red";
+        this.viewButton.classList.toggle('bio');
     }
 }
 

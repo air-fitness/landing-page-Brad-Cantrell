@@ -38,26 +38,38 @@ body {
         }
 
         .pic-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             width: 200px;
             height: 350px;
             background: white;
-            text-align: center;
             margin: 50px 0;
+
+            h4{
+                margin-top: 0;
+            }
         }
 
         .viewButton {
             width: 70px;
-            height: 25px;
+            height: 40px;
             background: rgb(156, 155, 155);
-            text-align: center;
             color: white;
             border-radius: 5px;
             cursor: pointer;
+            display: flex;
+            justify-content: flex-end;
+
+            h3{
+                margin: auto;
+            }
         }
         
     }
 }
 
 .bio {
-    background: red;
+    border: 5px solid red;
+    height: 200%;
 }
